@@ -3,10 +3,11 @@ import mechanize
 from bs4 import BeautifulSoup
 import re
 
-
+from django.conf import settings
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse,HttpResponseRedirect, Http404
 from django.template import Context, loader
+
 # Create your views here.
 from .forms import SearchForm
 from .models import Searchreq
@@ -19,25 +20,25 @@ BASE_DIR = os.path.dirname(__file__)
 ##
 # Handle 404 Errors
 # @param request WSGIRequest list with all HTTP Request
-def error404(request):
- 	context={}
- 	template = "404.html"
- 	return render(request,template,context,status=404)
+# def error404(request):
+#  	context={}
+#  	template = "404.html"
+#  	return render(request,template,context,status=404)
 
-def error400(request):
- 	context={}
- 	template = "400.html"
- 	return render(request,template,context,status=400)
+# def error400(request):
+#  	context={}
+#  	template = "400.html"
+#  	return render(request,template,context,status=400)
 
-def error403(request):
- 	context={}
- 	template = "403.html"
- 	return render(request,template,context,status=403)
+# def error403(request):
+#  	context={}
+#  	template = "403.html"
+#  	return render(request,template,context,status=403)
 
-def error500(request):
- 	context={}
- 	template = "500.html"
- 	return render(request,template,context,status=500)
+# def error500(request):
+#  	context={}
+#  	template = "500.html"
+#  	return render(request,template,context,status=500)
 
 def get_ip(request):
 	try:
