@@ -11,13 +11,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-SECRET_KEY_DIR=os.path.join(os.path.dirname(__file__),'secret_key.txt');
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open(SECRET_KEY_DIR) as f:
-    SECRET_KEY = f.read().strip()
+SECRET_KEY = "7hmok(66ynnt1sa1+ehplh#ne&#%7mt--5iyy32-q-^tc59fqp"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
