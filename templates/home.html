@@ -25,7 +25,7 @@
  <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron" style="background-color:black">
       <div class="container">
-      <div class = 'col-sm-6'>
+      <div class = 'col-sm-6 pull-right'>
       <!--
         <h1>Namastē, duniyā!</h1>
         <h1>नमस्ते, दुनिया!</h1>
@@ -34,7 +34,7 @@
         <p>We present a prototype system for providing quick information on common and popular queries through text messaging as well as online.</p>
         <p><a href="/about/" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         </div>
-        <div class = 'col-sm-6'>
+        <div class = 'col-sm-6 pull-left'>
         <img src = "{% static 'img/foxsearch.jpg' %}" class = 'img-responsive img-rounded'/>
         </div>
       </div>
@@ -45,7 +45,7 @@
 <h1> Hello, Welcome home</h1>
 <form method="POST" action="/result/"> {% csrf_token %}
 {{ form.as_p}}
-<input type='submit' value='Search' class = 'btn' style="background-color:black; font-size:21px;" /> 
+<input type='submit' value='Search' class = 'btn' style="background-color:black; font-size:18px;" /> 
 </form>
 <hr/>
 </div>

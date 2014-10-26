@@ -24,7 +24,7 @@
       </div>
     </div><style>
 .jumbotron h2 {
-	padding-top:10px;
+	padding-top:8px;
 }
 </style>
 
@@ -32,32 +32,42 @@
     <div class="jumbotron" style="background-color:black">
       <div class="container">
       <div class="row">
-      <div class = 'col-md-6 pull-right'>
+      <div class = 'col-md-6'>
 
         <h1> It took some time</h1>
-        <div class='well' style="font-size:21px;">{{response}}</div>
+        <div class='well' style="font-size:18px;">{{response}}</div>
 		 <p style="text-align: center;"><a href="/home/" class="btn btn-primary btn-lg" role="button">Search another &raquo;</a></p>
         </div>
-        <div class = 'col-md-6 pull-left'>
-        <img src = "{% static 'img/foxresult.jpg' %}" class = 'img-responsive img-rounded' style="padding-top:100px" />
+        <div class = 'col-md-6'>
+        <img src = "{% static 'img/foxresult.jpg' %}" class = 'img-responsive img-rounded' style="padding-top:80px" />
         <p><h2 style="text-align: center;"> Share your experience </h2>
-        <div class="sharing">
+		 <ul class="sharing">
+			 <li>
 			 		<a href="https://www.facebook.com/sharer/sharer.php?u=https://foxsearch.herokuapp.com/" target = "_blank">
 			 		<i class="fa fa-facebook-square fa-4x" style="color:#262626"></i>
 			 		</a>
+			 </li>
+			 <li>
 			 		<a href="https://twitter.com/home?status=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20%23FoxSearch%20.Tweet%20%40praveenyadav.%20Https%3A%2F%2Ffoxsearch.herokuapp.com%2F" target="_blank">
 			 		<i class="fa fa-twitter-square fa-4x" style="color:#262626"></i>
 			 		</a>
+			  </li>
+			  <li>
 			 		 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://foxsearch.herokuapp.com/&title=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20FoxSearch.&summary=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20FoxSearch.&source=http://foxsearch.herokuapp.com/" target="_blank">
 			   		 <i class="fa fa-linkedin-square fa-4x" style="color:#262626"></i>
 			   		 </a>
+			   </li>
+			   <li>
 			   		<a href="http://www.reddit.com/submit?url=https://foxsearch.herokuapp.com/&title=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20FoxSearch." target="_blank">
 			    	<i class="fa fa-reddit-square fa-4x" style="color:#262626"></i>
 			    	</a>
-			    	<a href='https://plus.google.com/share?url=https://foxsearch.herokuapp.com'>
+			    </li>
+			    <li>
+			    	<a href='https://plus.google.com/share?url=https://foxsearch.heroku.com'>
 			     	<i class="fa fa-google-plus-square fa-4x" style="color:#262626"></i>
 			     	</a>
-		     </div>
+			    </li>
+		     </ul>
 		     </p>
         </div>
         </div>
