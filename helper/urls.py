@@ -15,7 +15,6 @@ urlpatterns = patterns('',
     url(r'^home/', 'searchreqs.views.home', name='home'),
     url(r'^about/', 'searchreqs.views.about', name='about'),
     url(r'^contact/', 'searchreqs.views.contact', name='contact'),
-    #url(r'^testhome/', 'helper.views.home', name='testhome'),
     url(r'^$', 'searchreqs.views.home', name='home'),
     #url(r'^.*$','searchreqs.views.home', name='home')
     # url(r'^blog/', include('blog.urls')),
