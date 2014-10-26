@@ -1,0 +1,81 @@
+ {% extends "base.html" %}
+
+{% load staticfiles %}
+{% block content %}
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/about/">FoxSearch</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div><style>
+.jumbotron h2 {
+	padding-top:10px;
+}
+</style>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+      <div class="container">
+      <div class="row">
+      <div class = 'col-md-6 pull-right'>
+
+        <h1> It took some time</h1>
+        <div class='well' style="font-size:21px;">{{response}}</div>
+		 <p style="text-align: center;"><a href="/home/" class="btn btn-primary btn-lg" role="button">Search another &raquo;</a></p>
+        </div>
+        <div class = 'col-md-6 pull-left'>
+        <img src = "{% static 'img/foxresult.jpg' %}" class = 'img-responsive img-rounded' style="padding-top:100px" />
+        <p><h2 style="text-align: center;"> Share your experience </h2>
+		 <ul class="sharing">
+			 <li>
+			 		<a href="https://www.facebook.com/sharer/sharer.php?u=http://CodingForEntrepreneurs.com/" target = "_blank">
+			 		<i class="fa fa-facebook-square fa-4x" style="color:#262626"></i>
+			 		</a>
+			 </li>
+			 <li>
+			 		<a href="https://twitter.com/home?status=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20%23FoxSearch%20.Tweet%20%40praveenyadav.%20Http%3A%2F%2Ffoxsearch.herokuapp.com%2F" target="_blank">
+			 		<i class="fa fa-twitter-square fa-4x" style="color:#262626"></i>
+			 		</a>
+			  </li>
+			  <li>
+			 		 <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://foxsearch.herokuapp.com/&title=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20FoxSearch.&summary=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20FoxSearch.&source=http://foxsearch.herokuapp.com/" target="_blank">
+			   		 <i class="fa fa-linkedin-square fa-4x" style="color:#262626"></i>
+			   		 </a>
+			   </li>
+			   <li>
+			   		<a href="http://www.reddit.com/submit?url=http://foxsearch.herokuapp.com/&title=Hey%20there%2C%20I%20am%20using%20this%20amazing%20transliterated%20query%20app%20FoxSearch." target="_blank">
+			    	<i class="fa fa-reddit-square fa-4x" style="color:#262626"></i>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href='https://plus.google.com/share?url=http://codingforentrepreneurs.com'>
+			     	<i class="fa fa-google-plus-square fa-4x" style="color:#262626"></i>
+			     	</a>
+			    </li>
+		     </ul>
+		     </p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+<div class = 'container'>
+
+
+</div>
+{% endblock %}

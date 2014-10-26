@@ -1,0 +1,86 @@
+ {% extends "base.html" %}
+
+{% load staticfiles %}
+{% block content %}
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/about/">FoxSearch</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+      <div class="container">
+      <div class="contactinfo">
+      <h1>Project Mentor:</h1>
+      <div class="row">
+      <div class = 'col-sm-3'>
+        <img src = "{% static 'img/mentor.jpg' %}" class = 'img-responsive img-rounded'/>
+        </div>
+        <div class = 'col-sm-6'>
+        <ul>
+        <li>Sukomal Pal</li>
+        <li>Assistant Professor at ISM Dhanbad</li>
+        <li> Ph. D (ISI, Kolkata) MTech (ISI, Kolkata) B.E. (B E College (DU), presently known as BESUS, WB)<li>
+        <li>pal.s.cse@ismdhanbad.ac.in</li>
+        </div>
+        </div>
+        <h1>Developers:</h1>
+        <div class="row">
+        <div class = 'col-sm-2'>
+        <img src = "{% static 'img/dev1.jpg' %}" class = 'img-responsive img-rounded'/>
+        </div>
+        <div class = 'col-sm-3'>
+        <ul>
+        <li>Praveen Yadav</li>
+        <li>Undergrads from ISM Dhanbad</li>
+        <li>praveenyadav1193@yahoo.com</li>
+        </ul>
+        </div>
+        <div class = 'col-sm-2'>
+        <img src = "{% static 'img/dev2.jpg' %}" class = 'img-responsive img-rounded'/>
+        </div>
+        <div class = 'col-sm-3'>
+         <ul>
+        <li>Rishab Kumar</li>
+        <li>Undergrads from ISM Dhanbad</li>
+        <li>kr.rishabh618@gmail.com</li>
+        </ul>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class = 'col-sm-2'>
+        <img src = "{% static 'img/dev3.jpg' %}" class = 'img-responsive img-rounded'/>
+        </div>
+        <div class = 'col-sm-3'>
+        <ul>
+        <li>L Gautam</li>
+        <li>Undergrads from ISM Dhanbad</li>
+        <li>gtam25@gmail.com</li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+ <div class = 'container' style = 'text-align:center;' >
+ <hr/>
+<h1> Contact us:praveenyadav1193@yahoo.com</h1>
+<hr/>
+</div>
+{% endblock %}

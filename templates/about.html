@@ -1,0 +1,47 @@
+ {% extends "base.html" %}
+
+{% load staticfiles %}
+{% block content %}
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/about/">FoxSearch</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/home/">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+      <div class="container">
+      <div class = 'col-sm-6'>
+      <!--
+        <h1>Namastē, duniyā!</h1>
+        <h1>नमस्ते, दुनिया!</h1>
+        -->
+        <h1>FoxSearch</h1>
+        <p>We present a prototype system for providing quick information on common and popular queries through text messaging as well as onsite. The system receives a free text input in Roman script. The system is designed mainly for low-cost mobile phones having text-only messaging facility but without Internet and native language support. The target users are primarily semi-literate people who may not have sufficient knowledge in English. The output is thus translated in the language of user query (in this case Hindi) as transliterated text.</p>
+        </div>
+        <div class = 'col-sm-6'>
+        <img src = "{% static 'img/foxabout.jpg' %}" class = 'img-responsive img-rounded'/>
+        </div>
+      </div>
+    </div>
+
+ <div class = 'container' style = 'text-align:center;' >
+ <hr/>
+<h1>About Project</h1>
+<hr/>
+</div>
+{% endblock %}

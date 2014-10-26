@@ -1,0 +1,29 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-color:#fff;
+}
+
+.sharing{
+	text-align: center;
+	padding-top: 0px;
+}
+.sharing li {
+	display: inline;
+	padding-right:10px;
+}
+
+.contactinfo img {
+	padding-top: 5px;
+}
+
+.contactinfo ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+
+img {
+	padding-top: 50px;
+}
