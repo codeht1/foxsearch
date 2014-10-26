@@ -8,7 +8,7 @@ body {
 .sharing{
 	text-align: center;
 	padding-top: 0px;
-	color:grey;
+	color:inherit;
 }
 .sharing li {
 	display: inline;
