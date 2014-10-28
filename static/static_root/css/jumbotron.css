@@ -1,13 +1,13 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 15px;
   font-color:#fff;
 }
 
 .sharing{
 	text-align: center;
-	padding-top: 0px;
+	color:inherit;
 }
 .sharing li {
 	display: inline;
@@ -25,5 +25,5 @@ body {
 
 
 img {
-	padding-top: 50px;
+	padding-top: 30px;
 }
